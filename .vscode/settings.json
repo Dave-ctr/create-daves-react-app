@@ -1,0 +1,21 @@
+{
+  "editor.guides.bracketPairs": "active",
+  "workbench.colorTheme": "Hyper Term Black",
+  "workbench.preferredDarkColorTheme": "Hyper Term Black",
+  "workbench.preferredHighContrastColorTheme": "Hyper Term Black",
+  "workbench.preferredHighContrastLightColorTheme": "Hyper Term Black",
+  "workbench.preferredLightColorTheme": "Hyper Term Black",
+  "css.trace.server": "verbose",
+  "markdown.trace.server": "verbose",
+  "markdown.server.log": "trace",
+  "markdown.preview.typographer": true,
+  "json.trace.server": "verbose",
+  "html.trace.server": "verbose",
+  "html.format.templating": true,
+  "files.autoGuessEncoding": true,
+  "editor.linkedEditing": true,
+  "mdx.experimentalLanguageServer": true,
+  "liveshare.languages.allowGuestCommandControl": true,
+  "files.defaultLanguage": " ${activeEditorLanguage}",
+  "code-runner.defaultLanguage": " ${activeEditorLanguage}"
+}
