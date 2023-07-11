@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
+import { FaTrashAlt } from "react-icons/fa"
 
-function Content = () =>
+function Content()
 {
+
   const [ items, setItems ] = useState( [
     {
       id: 1,
@@ -20,22 +22,30 @@ function Content = () =>
     }
   ] );
 
-
-
-
-
-
   return (
     <main>
-
-
+      <ul>
+        { items.map( ( item ) => (
+          <li className="item" key={ item.id }>
+            <input
+              type="checkbox"
+              checked={ item.checked }
+            />
+            <label>{ item.item }</label>
+            <FaTrashAlt
+              role="button"
+              tabIndex="0"
+            />
+          </li>
+        ) ) }
+      </ul>
     </main>
   )
 }
 
 export default Content
 
-/*
+/* Functional component code:
     eslint-disable-next-line no-unused-vars
    const [ name, setName ] = useState( "Dave" );
  
@@ -65,11 +75,12 @@ export default Content
    }
  */
 
-{/*} <p onDoubleClick={ handleClick }>
+/* Return JSX code:
+<p onDoubleClick={ handleClick }>
         Hello { name }!
       </p>
       <button onClick={ handleNameChange }>Change Name</button>
       <button onClick={ handleClick }>Count</button>
       <button onClick={ () => handleClick1( 'Dave' ) }>Dave - Click It </button>
   <button onClick={ ( e ) => handleClick2( e ) }>Event - Click It </button>
-*/};
+*/
