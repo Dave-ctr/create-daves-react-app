@@ -7,6 +7,7 @@ import { useState } from "react";
 
 function App()
 {
+
   const [ items, setItems ] = useState( JSON.parse( localStorage.getItem( "stufflist" ) ) );
 
   const [ newItem, setNewItem ] = useState( '' )
@@ -46,6 +47,9 @@ function App()
     if ( !newItem ) return;
     addItem( newItem );
     setNewItem( '' );
+
+
+
   }
 
   return (
