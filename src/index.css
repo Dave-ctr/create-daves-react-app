@@ -20,6 +20,11 @@ body
   -moz-osx-font-smoothing: grayscale;
 }
 
+::-webkit-scrollbar
+{
+  width: 0;
+}
+
 .App
 {
   display: flex;
@@ -118,10 +123,11 @@ ul li::before
 
 .item svg
 {
-  width: 48px;
+  height: 48px;
   min-width: 48px;
-  height: 36px;
-  font-size: 1rem;
+  font-size: 3rem;
+  flex: flex-end;
+  padding: 0 0 0 1.3rem;
   color: steelblue;
   cursor: pointer;
 }
