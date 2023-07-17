@@ -22,7 +22,6 @@ const LineItem = ( { item, handleCheck, handleDelete } ) =>
         aria-label={ `Delete ${ item.item }` }
       />
     </li>
-  )
-}
+  )}
 
 export default LineItem
