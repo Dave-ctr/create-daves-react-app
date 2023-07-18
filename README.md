@@ -1,3 +1,22 @@
+Current Status: Successful completion of List App to start my learning of React journey.
+
+This takes me through to Video 9 (Controlled Form Inputs) of a React learning series I am working through to compliment the curriculum projects and was referenced in the prop drilling vids to watch in Sprint5 in our Student Handbook.
+
+This is the link to entire playlist: https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PrE9srvEn8nbhOOyxnWXfp
+
+I have found this series enjoyable to follow thus far and have only (not sure how contextually accurate this "only" is lol) caused myself two errors up to this point-
+1. I Frankensteined my functional component calls initially i.e. function App = () => {do do dooo}
+2. I omitted a key component of a conditional ternary statement as previously noted (const handleCheck = ( id ) =>
+  {
+    const listItems = items.map( ( item ) => item.id === id/*THIS ID HERE*/ ? { ...item, checked: !item.checked } : item );
+    setAndSaveItems( listItems );
+  })
+
+  Aside from that I'm feeling pretty good about where I am at.
+
+  Chur
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
