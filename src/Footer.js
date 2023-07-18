@@ -1,12 +1,12 @@
-import React from "react";
-
 const Footer = ( { length } ) => 
 {
   const today = new Date();
   return (
     <footer>
       <p>
-        { length } List { length === 1 ? "item" : "items" } ~ Copyright &copy; { today.getFullYear() }
+        { length } List { length === 1 ? "Item " : "Items " }
+        ~
+        Copyright &copy; { today.getFullYear() }
       </p>
     </footer>
   )
